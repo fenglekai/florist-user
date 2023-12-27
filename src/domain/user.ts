@@ -46,7 +46,7 @@ export namespace user {
   }
   // 服务的响应参数
   export interface Data {
-    userId?: number;
+    userId?: string;
     username?: string;
     role?: string;
     authorization?: string;

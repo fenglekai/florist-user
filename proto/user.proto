@@ -31,7 +31,7 @@ message VerifyRequest {
 
 // 服务的响应参数
 message Data {
-  int64 userId = 1;
+  string userId = 1;
   string username = 2;
   string role = 3;
   string authorization = 5;

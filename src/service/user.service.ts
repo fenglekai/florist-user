@@ -50,7 +50,7 @@ export class UserService {
     user.role = role;
     const result = await this.userModel.save(user);
     const data = {
-      userId: result.id,
+      userId: result.uuid,
       username: result.username,
       role: result.role,
     };
@@ -71,7 +71,7 @@ export class UserService {
       throw new httpError.BadRequestError('密码错误');
     }
     const data = {
-      userId: user.id,
+      userId: user.uuid,
       username: user.username,
       role: user.role,
       authorization: '',
